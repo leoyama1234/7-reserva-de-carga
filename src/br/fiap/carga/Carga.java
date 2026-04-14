@@ -17,4 +17,36 @@ public class Carga {
         this.id = random.nextInt(1000, 9999 );
         this.peso = random.nextDouble(1000, 5000);
     }
+
+    public String getDados(){
+        String aux = "";
+
+        aux += "ID" + id + "\n";
+        aux += "Destino:" + destino + "\n";
+        aux += "Peso: " + peso + "kg\n";
+        aux += "Cliente:" + cliente.getDados();
+        return aux;
+    }
+
+
+    public int getId() {
+        return id;
+    }
+
+    public String getDestino() {
+        return destino;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
 }
