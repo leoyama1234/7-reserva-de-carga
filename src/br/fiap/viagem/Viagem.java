@@ -37,5 +37,16 @@ public class Viagem {
         return false;
     }
 
+    public String getDados(){
+        String aux = "";
+        for (int i = 0; i < index; i++) {
+            aux += carga[i].getDados() + "\n";
+            aux += "-------------------------------\n";
+        }
+        return aux;
+    }
 
+    public int getIndex() {
+        return index;
+    }
 }

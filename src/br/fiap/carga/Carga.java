@@ -21,10 +21,10 @@ public class Carga {
     public String getDados(){
         String aux = "";
 
-        aux += "ID" + id + "\n";
-        aux += "Destino:" + destino + "\n";
+        aux += "ID: " + id + "\n";
+        aux += "Destino: " + destino + "\n";
         aux += "Peso: " + peso + "kg\n";
-        aux += "Cliente:" + cliente.getDados();
+        aux += cliente.getDados();
         return aux;
     }
 
